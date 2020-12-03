@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 [![GitHub issues](https://img.shields.io/github/issues/AliSajid/PanCanNebraska)](https://github.com/AliSajid/PanCanNebraska/issues)
 [![GitHub forks](https://img.shields.io/github/forks/AliSajid/PanCanNebraska)](https://github.com/AliSajid/PanCanNebraska/network)
 [![GitHub stars](https://img.shields.io/github/stars/AliSajid/PanCanNebraska)](https://github.com/AliSajid/PanCanNebraska/stargazers)
-[![Travis build status](https://travis-ci.com/AliSajid/PanCanNebraska.svg?branch=master)](https://travis-ci.com/AliSajid/PanCanNebraska)
+[![Travis build status](https://travis-ci.com/AliSajid/PanCanNebraska.svg?branch=main)](https://travis-ci.com/AliSajid/PanCanNebraska)
 [![codecov](https://codecov.io/gh/AliSajid/PanCanNebraska/branch/main/graph/badge.svg?token=HP1VFCRZ0M)]()
 
 ![GitHub release (latest SemVer including pre-releases)](https://img.shields.io/github/v/release/AliSajid/PanCanNebraska?include_prereleases&label=latest-release)

@@ -12,7 +12,7 @@ forks](https://img.shields.io/github/forks/AliSajid/PanCanNebraska)](https://git
 [![GitHub
 stars](https://img.shields.io/github/stars/AliSajid/PanCanNebraska)](https://github.com/AliSajid/PanCanNebraska/stargazers)
 [![Travis build
-status](https://travis-ci.com/AliSajid/PanCanNebraska.svg?branch=master)](https://travis-ci.com/AliSajid/PanCanNebraska)
+status](https://travis-ci.com/AliSajid/PanCanNebraska.svg?branch=main)](https://travis-ci.com/AliSajid/PanCanNebraska)
 [![codecov](https://codecov.io/gh/AliSajid/PanCanNebraska/branch/main/graph/badge.svg?token=HP1VFCRZ0M)]()
 
 ![GitHub release (latest SemVer including
