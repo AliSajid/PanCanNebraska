@@ -4,8 +4,10 @@ language: R
 
 r:
   - release
+  - devel
   - bioc-devel
   - bioc-release
+  - 4.0.3
 
 cache:
   directories:
