@@ -5,6 +5,8 @@
 
 <!-- badges: start -->
 
+[![Travis build
+status](https://travis-ci.com/AliSajid/PanCanNebraska.svg?branch=master)](https://travis-ci.com/AliSajid/PanCanNebraska)
 <!-- badges: end -->
 
 The goal of PanCanNebraska package is to iddentify potential drugs that
