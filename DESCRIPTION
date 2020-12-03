@@ -16,7 +16,7 @@ Authors@R: c(
            )
 Description: This package includes the code and the analysis done for the 
     PanCan project collaboration between Siddhartha Mahapatra's Lab at Nebraska
-    and the Cognitive Disorders Research Lab at University of Toledo
+    and the Cognitive Disorders Research Lab at University of Toledo.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
