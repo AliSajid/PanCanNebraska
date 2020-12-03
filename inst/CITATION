@@ -1,16 +1,15 @@
 citHeader("To cite PanCanNebraska in publications use:")
 
 citEntry(
-  entry    = "Article",
-  title    = ,
-  author   = ,
-  journal  = ,
-  year     = ,
-  volume   = ,
-  number   = ,
-  pages    = ,
-  url      = ,
-  textVersion = paste(
-
+  entry    = "Misc",
+  title    = "PanCanNebraska",
+  author   = personList(
+  as.person("Ali Sajid Imami"),
+  as.person("Abdul-rizaq Ali Hamoud")
+  ),
+  url      = "http://github.com/AliSajid/PanCanNebraska",
+  textVersion = paste("Ali Sajid Imami and Abdul-rizaq Ali Hamoud",
+  "PanCanNebraska Analysis",
+  "URL http://github.com/AliSajid/PanCanNebraska"
   )
 )
