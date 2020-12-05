@@ -32,4 +32,5 @@ Imports:
     tibble,
     rlang,
     dplyr,
-    purrr
+    purrr,
+    readr
