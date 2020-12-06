@@ -1,7 +1,7 @@
 Package: PanCanNebraska
 Type: Package
 Title: Perform the PanCan Drug Discovery Analysis
-Version: 0.0.1.9000
+Version: 0.1.0
 Authors@R: c(
     person(given = c("Ali", "Sajid"),
            family = "Imami",
@@ -32,4 +32,6 @@ Imports:
     tibble,
     rlang,
     dplyr,
-    purrr
+    purrr,
+    readr,
+    stringr
