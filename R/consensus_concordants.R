@@ -1,3 +1,23 @@
+#' Rename the Target-Related Columns
+#'
+#' @param input_names A character vector of input_names
+#'
+#' @return A character vector of new names
+#'
+#' @examples
+#' TRUE
+target_rename <- function(input_names) {
+  if ("treatment" %in% input_names) {
+    new_cols <- c("TargetSignature", "Target", "TargetCellLine",
+                  "TargetTime", "Similarity")
+  } else {
+    new_cols <- c("TargetSignature", "Target", "TargetCellLine",
+                  "TargetTime", "TargetConcentration", "Similarity")
+  }
+
+  new_cols
+}
+
 #' Generate a Consensus list of Targets
 #'
 #' This function takes a list of (optionally split) concordance dataframes and returns
@@ -14,7 +34,7 @@
 #' @export
 #'
 #' @importFrom magrittr %>%
-#' @importFrom dplyr filter arrange any_of group_by across select bind_rows
+#' @importFrom dplyr filter arrange any_of group_by across select bind_rows rename_with ungroup
 #' @importFrom rlang .data
 #'
 #' @examples
@@ -42,8 +62,12 @@ consensus_concordants <- function(..., paired = FALSE, cutoff = 0.321,
         dplyr::across(dplyr::any_of(c("treatment", "compound")))
       ) %>%
       dplyr::filter(abs(.data$similarity) == max(abs(.data$similarity))) %>%
-      dplyr::select(.data$signatureid, dplyr::any_of(c("treatment", "compound")), .data$similarity) %>%
-      dplyr::arrange(abs(.data$similarity))
+      dplyr::select(.data$signatureid, dplyr::any_of(c("treatment", "compound")),
+                    .data$cellline, .data$time, dplyr::any_of(c("concentration")),
+                    .data$similarity) %>%
+      dplyr::arrange(dplyr::desc(abs(.data$similarity))) %>%
+      dplyr::rename_with(target_rename) %>%
+      dplyr::ungroup()
   } else {
     filtered <- concordants %>%
       dplyr::filter(.data$similarity >= cutoff) %>%
@@ -51,8 +75,12 @@ consensus_concordants <- function(..., paired = FALSE, cutoff = 0.321,
         dplyr::across(dplyr::any_of(c("treatment", "compound")))
       ) %>%
       dplyr::filter(abs(.data$similarity) == max(abs(.data$similarity))) %>%
-      dplyr::select(.data$signatureid, dplyr::any_of(c("treatment", "compound")), .data$similarity) %>%
-      dplyr::arrange(abs(.data$similarity))
+      dplyr::select(.data$signatureid, dplyr::any_of(c("treatment", "compound")),
+                    .data$cellline, .data$time, dplyr::any_of(c("concentration")),
+                    .data$similarity) %>%
+      dplyr::arrange(dplyr::desc(abs(.data$similarity))) %>%
+      dplyr::rename_with(target_rename) %>%
+      dplyr::ungroup()
   }
 
   filtered
