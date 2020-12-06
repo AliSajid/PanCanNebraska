@@ -33,4 +33,5 @@ Imports:
     rlang,
     dplyr,
     purrr,
-    readr
+    readr,
+    stringr
