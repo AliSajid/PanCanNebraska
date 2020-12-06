@@ -41,6 +41,8 @@ The PanCanNebraska Repository contains the code and the analysis that
 researchers at the Cognitive Disorders Research Lab (CDRL) have
 performed for the Mahapatra Lab at University of Nebraska.
 
+This project is licensed under the terms of the GNU GPLv3 License.
+
 ## Installation
 
 This is a stand-alone project that will not be submitted to CRAN or
