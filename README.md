@@ -5,6 +5,8 @@
 
 <!-- badges: start -->
 
+[![DOI](https://zenodo.org/badge/318059884.svg)](https://zenodo.org/badge/latestdoi/318059884)
+
 [![GitHub
 issues](https://img.shields.io/github/issues/AliSajid/PanCanNebraska)](https://github.com/AliSajid/PanCanNebraska/issues)
 [![GitHub
@@ -35,14 +37,22 @@ size](https://img.shields.io/github/repo-size/AliSajid/PanCanNebraska)
 
 <!-- badges: end -->
 
-The goal of PanCanNebraska package is to iddentify potential drugs that
-can be used to mimic or reverse the signatures of PAF1 or PRPK1.
+The PanCanNebraska Repository contains the code and the analysis that
+researchers at the Cognitive Disorders Research Lab (CDRL) have
+performed for the Mahapatra Lab at University of Nebraska.
 
 ## Installation
 
-You can install the released version of PanCanNebraska from
-[CRAN](https://CRAN.R-project.org) with:
+This is a stand-alone project that will not be submitted to CRAN or
+Bioconductor. It can be installed directly from github using devtools:
 
 ``` r
-install.packages("PanCanNebraska")
+devtools::install_github("AliSajid/PanCanNebraska")
+```
+
+The analysis is contained within the vignettes. If you want to build the
+vignettes yourselves, use the following command:
+
+``` r
+devtools::install_github("AliSajid/PanCanNebraska", build_vignettes = TRUE)
 ```
